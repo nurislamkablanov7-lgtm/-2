@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ықтималдылық — ықтималдықты түсініп үйренетін курс</title>
+<meta name="description" content="Ықтималдықты қазақша үйрен: 8 сабақ, шешілген мысалдар, формулалар және тест. Автор: Эргешов Музаффар.">
+<meta name="theme-color" content="#173528">
+<meta property="og:title" content="Ықтималдылық — ықтималдықты түсініп үйренетін курс">
+<meta property="og:description" content="Ықтималдық теориясы жеңіл тілде: сабақтар, формулалар, тест.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="kk_KZ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6ef;--ink:#14281f;--muted:#526459;--line:#cfdcd2;--card:#fff;--g:#173528;--g2:#2c5a42;--mint:#cfe8d6;--gold:#e3b73b;--ok:#1f8a4c;--bad:#c0392b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1c15;--ink:#e6efe8;--muted:#9bb0a2;--line:#27402f;--card:#15281d;--g:#0a1610;--g2:#7cc79b;--mint:#1e3a2a;--ok:#4cc27f;--bad:#ef7a6d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1c15;--ink:#e6efe8;--muted:#9bb0a2;--line:#27402f;--card:#15281d;--g:#0a1610;--g2:#7cc79b;--mint:#1e3a2a;--ok:#4cc27f;--bad:#ef7a6d;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "PT Sans",system-ui,sans-serif}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{margin:0;line-height:1.12;letter-spacing:-.02em}
+em{font-family:"PT Serif",Georgia,serif;font-style:italic;color:var(--g2)}
+a{color:inherit}
+.tag{display:inline-block;font-weight:700;font-size:14px;color:var(--g2);margin-bottom:10px}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;flex-wrap:wrap}
+.logo{font-weight:700;font-size:22px;text-decoration:none}
+.logo b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:9px;background:var(--gold);color:#173528;margin-right:8px}
+.nav nav{display:flex;gap:18px;flex-wrap:wrap}
+.nav a{text-decoration:none;font-size:15px;opacity:.9}
+.hero{background:var(--g);color:#eaf3ec}
+.hero em{color:var(--gold)}
+.hero .nav a{color:#eaf3ec}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;padding:40px 0 56px}
+@media (max-width:820px){.hg{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(38px,7vw,72px)}
+.hero p{font-size:19px;color:#c4d8ca;max-width:32em;margin:18px 0 24px}
+.btn{display:inline-block;font:700 16px "PT Sans",sans-serif;padding:12px 20px;border-radius:10px;border:2px solid var(--gold);background:var(--gold);color:#173528;text-decoration:none;cursor:pointer}
+.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.hero .btn.o{color:#eaf3ec}
+.nb{background:#eef5ef;color:#173528;border-radius:16px;padding:28px;font-family:"PT Serif",Georgia,serif;font-size:26px;line-height:2;background-image:repeating-linear-gradient(transparent 0 51px,#c5d9cb 51px 52px);transform:rotate(1.5deg);box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.nb small{display:block;font:700 14px "PT Sans",sans-serif;color:#2c5a42}
+.nb .ok{color:#1f8a4c;font:700 18px "PT Sans",sans-serif}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding-bottom:40px}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stats div{border-top:2px solid var(--gold);padding-top:10px;color:#c4d8ca;font-size:15px}
+.stats b{display:block;font-size:34px;color:#fff}
+.sec{padding:64px 0}
+.sec h2{font-size:clamp(28px,4.4vw,44px);max-width:16em;margin-bottom:14px}
+.lead{color:var(--muted);max-width:36em;margin:0 0 26px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.steps div,.dir button,.lc,.fc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.steps b{display:block;font-size:19px;margin-bottom:4px}
+.dir{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.dir button{text-align:left;cursor:pointer;color:inherit;font:inherit}
+.dir button:hover,.lc:hover,.fc:hover{border-color:var(--g2)}
+.dir h3{font-size:21px;margin-bottom:6px}
+.bar{height:10px;border-radius:6px;background:var(--mint);overflow:hidden;margin:8px 0 18px}
+.bar i{display:block;height:100%;width:0;background:var(--ok);transition:width .3s}
+.tb{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+input[type=search]{flex:1;min-width:200px;padding:11px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.chip{padding:7px 14px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:15px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--g);color:#fff;border-color:var(--g)}
+.lg,.fg{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.lc{text-align:left;cursor:pointer;color:inherit;font:inherit;position:relative}
+.lc small{color:var(--muted)}
+.lc h3{font-size:19px;margin:4px 0}
+.lc.d::after{content:"✓";position:absolute;right:14px;top:12px;color:var(--ok);font-weight:700}
+.fc{cursor:pointer;text-align:left;color:inherit;font:inherit}
+.fc b{display:block;font-size:15px;color:var(--muted);margin-bottom:4px}
+.fc span,.fm{font-family:"PT Serif",Georgia,serif;font-style:italic;font-size:21px}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--g);color:#fff;padding:10px 18px;border-radius:10px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50}
+.toast.on{opacity:1}
+.qz{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;max-width:720px}
+.qz h3{font-size:22px;margin:6px 0 16px}
+.op{display:block;width:100%;text-align:left;margin:8px 0;padding:12px 14px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--ink);font:inherit;cursor:pointer}
+.op:hover:not(:disabled){border-color:var(--g2)}
+.op.ok{border-color:var(--ok);background:rgba(31,138,76,.14)}
+.op.bad{border-color:var(--bad);background:rgba(192,57,43,.12)}
+.ex{margin:12px 0;color:var(--muted)}
+.steps2{display:grid;gap:12px}
+.steps2 div{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start}
+.steps2 i{font:700 16px "PT Sans",sans-serif;font-style:normal;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--g);color:#fff}
+dialog{width:min(640px,calc(100vw - 24px));max-height:88vh;border:none;border-radius:18px;padding:0;background:var(--card);color:var(--ink)}
+dialog::backdrop{background:rgba(5,15,10,.6)}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;background:var(--g);color:#fff}
+.db{padding:20px 22px}
+.db h3{font-size:26px;margin-bottom:12px}
+.db p{margin:0 0 12px}
+.fm{background:var(--mint);padding:12px 16px;border-radius:10px;margin:12px 0}
+details{margin:8px 0}summary{cursor:pointer;font-weight:700;color:var(--g2)}
+.df{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;padding:14px 22px;border-top:1px solid var(--line)}
+.sm{font:700 15px "PT Sans",sans-serif;padding:9px 14px;border-radius:9px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.sm.p{background:var(--ok);border-color:var(--ok);color:#fff}
+.au{display:flex;gap:20px;align-items:center;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;max-width:720px}.av{width:84px;height:84px;border-radius:50%;background:var(--g);color:var(--gold);display:grid;place-items:center;font:700 28px "PT Sans",sans-serif;flex:none}.au h3{font-size:24px}.au p{margin:4px 0 12px}
+footer{background:var(--g);color:#c4d8ca;padding:32px 0;font-size:15px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bar i,.toast{transition:none}}
+</style>
+</head>
+<body>
+<div class="hero" id="top">
+<div class="w">
+<div class="nav"><a class="logo" href="#top"><b>Ы</b>ықтимал.math</a>
+<nav><a href="#about">Біз туралы</a><a href="#subjects">Бағыттар</a><a href="#lessons">Сабақтар</a><a href="#formula">Формулалар</a><a href="#quiz">Тест</a><a href="#author">Автор</a></nav></div>
+<div class="hg">
+<div>
+<span class="tag" style="color:var(--gold)">✳ Ықтималдылық — мүмкіндіктер тілі</span>
+<h1>Ықтималдықты <em>түсініп</em> үйренетін курс.</h1>
+<p>Оқиға, шартты ықтималдық, Байес формуласы және комбинаторика. Сабақты оқып, есеп шығарып, біліміңді тексер.</p>
+<a class="btn" href="#lessons">Сабақтарды бастау</a> <a class="btn o" href="#subjects">Бағыттарды қарау</a>
+</div>
+<div class="nb"><small>Ықтималдық дәптері</small>P(A) = m / n<br>= 6 / 36 = 1 / 6<br><span class="ok">✓ Жарайсың!</span></div>
+</div>
+<div class="stats"><div><b>8</b>толық сабақ</div><div><b>8</b>шешілген мысал</div><div><b>8</b>жеке жаттығу</div><div><b>5</b>тест сұрағы</div></div>
+</div>
+</div>
+
+<main>
+<section class="sec w" id="about">
+<span class="tag">Біз туралы</span>
+<h2>Қиын көрінген есептің де <em>қарапайым жолы бар.</em></h2>
+<p class="lead">Мақсат — формуланы жаттау емес, оны түсіну. Алдымен қысқа теорияны оқисың, сосын шешілген мысалды көресің, соңында өзің жаттығасың.</p>
+<div class="steps"><div><b>Негізді үйрен</b>Қысқа ереже мен формула.</div><div><b>Мысалды талда</b>Шешімнің әр қадамы.</div><div><b>Біліміңді тексер</b>Жаттығу мен тест.</div></div>
+</section>
+
+<section class="sec w" id="subjects" style="padding-top:0">
+<span class="tag">Оқу бағыттары</span>
+<h2>Төрт бағыт. <em>Бір үлкен мақсат.</em></h2>
+<p class="lead">Бағытты таңдасаң, төмендегі сабақтар тізімі сол тақырып бойынша сүзіледі.</p>
+<div class="dir" id="dir"></div>
+</section>
+
+<section class="sec w" id="lessons" style="padding-top:0">
+<span class="tag">Оқу кітапханасы</span>
+<h2>Сабақтан <em>нәтижеге дейін.</em></h2>
+<p class="lead">Сабақты ашып, теорияны оқы, мысалмен бекіт. Аяқтаған сабақтарың осы құрылғыда сақталады.</p>
+<b id="pt">Менің прогресім: 0 / 8 сабақ</b>
+<div class="bar"><i id="pb"></i></div>
+<div class="tb"><input type="search" id="q" placeholder="Сабақ іздеу" aria-label="Сабақ іздеу"><button class="sm" id="clr">Прогресті тазалау ↺</button></div>
+<div class="chips" id="chips"></div>
+<div class="lg" id="lg"></div>
+</section>
+
+<section class="sec w" id="formula" style="padding-top:0">
+<span class="tag">Шпаргалка</span>
+<h2>Маңызды формулалар <em>бір жерде.</em></h2>
+<p class="lead">Картаны бассаң, формула көшіріледі.</p>
+<div class="fg" id="fg"></div>
+</section>
+
+<section class="sec w" id="method" style="padding-top:0">
+<span class="tag">Оқу әдісі</span>
+<h2>Күн сайын кішкентай қадам. <em>Үлкен өзгеріс.</em></h2>
+<p class="lead">Бір сабаққа 10–15 минут жеткілікті.</p>
+<div class="steps2">
+<div><i>1</i><p><b>Тақырыпты оқы.</b> Негізгі ереже мен формуланы түсініп ал.</p></div>
+<div><i>2</i><p><b>Мысалды талда.</b> Шешімнің әр қадамын қайталап шық.</p></div>
+<div><i>3</i><p><b>Жаттығу жаса.</b> Тапсырманы өзің шешіп, жауабын тексер.</p></div>
+<div><i>4</i><p><b>Біліміңді тексер.</b> Төмендегі тестті орында.</p></div>
+</div>
+</section>
+
+<section class="sec w" id="quiz" style="padding-top:0">
+<span class="tag">Білімді тексеру</span>
+<h2>Дайынсың ба? <em>Өзіңді сына.</em></h2>
+<p class="lead">Әр жауаптан кейін түсіндірме көрсетіледі, соңында ұпай есептеледі.</p>
+<div class="qz" id="qz"></div>
+</section>
+<section class="sec w" id="author" style="padding-top:0">
+<span class="tag">Автор туралы</span>
+<h2>Математиканы <em>жеңіл тілде</em> түсіндіру.</h2>
+<div class="au"><div class="av" aria-hidden="true">ЭМ</div><div><h3>Эргешов Музаффар</h3><p>Студент</p><p>Менің мақсатым — математиканы жеңіл тілде түсіндіру. Бұл сайт ықтималдықты қарапайым мысалдар арқылы үйренуге көмектеседі.</p><a class="btn" href="tel:+77056365076">📞 8 705 636 50 76</a></div></div>
+</section>
+</main>
+
+<footer><div class="w">© 2026 ықтимал.math — ықтималдықты қазақша үйренуге арналған оқу беті. Автор: Эргешов Музаффар. Білімге бірге қадам жасайық.</div></footer>
+
+<dialog id="dlg" aria-labelledby="dt"><div class="dh"><b id="dc"></b><button class="sm" id="dx" style="color:#fff;border-color:#fff8">✕ Жабу</button></div><div class="db" id="dbd"></div><div class="df"><button class="sm" id="dp">← Алдыңғы</button><button class="sm p" id="dd"></button><button class="sm" id="dn">Келесі →</button></div></dialog>
+<div class="toast" id="ts" role="status"></div>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var T=['Негіздер','Қосу және көбейту','Шартты ықтималдық','Комбинаторика'];
+var L=[
+{c:0,t:'Оқиға және нәтиже',m:8,th:'Тәжірибенің мүмкін нәтижелері — элементар оқиғалар. Оқиға — осындай нәтижелердің жиыны.',f:'A ⊂ Ω',ex:'Сүйек лақтырғанда жұп сан түсуі: {2, 4, 6}, яғни 3 қолайлы нәтиже.',q:'Сүйек лақтырғанда 4-тен үлкен сан түсу оқиғасына қанша нәтиже қолайлы?',a:'2 нәтиже: 5 және 6.'},
+{c:0,t:'Классикалық ықтималдық',m:10,th:'Барлық нәтиже тең мүмкіндікті болса, ықтималдық қолайлы нәтижелер санының барлық нәтижелер санына қатынасына тең.',f:'P(A) = m / n',ex:'Қапшықта 3 қызыл және 7 көк шар бар. Қызыл шар алу: 3/10 = 0,3.',q:'Қорапта 5 ақ және 15 қара шар бар. Ақ шар алу ықтималдығы қандай?',a:'5/20 = 0,25.'},
+{c:1,t:'Қосу ережесі',m:12,th:'Екі оқиғаның бірі болу ықтималдығын табу үшін екеуінің ықтималдығын қосып, ортақ бөлігін алып тастаймыз.',f:'P(A ∪ B) = P(A) + P(B) − P(A ∩ B)',ex:'Сүйекте жұп немесе 3-ке еселі сан: 3/6 + 2/6 − 1/6 = 4/6 = 2/3.',q:'Сүйекте 5-тен үлкен немесе 1 түсу ықтималдығы қандай?',a:'Қолайлы нәтижелер: 6 және 1, яғни 2/6 = 1/3.'},
+{c:1,t:'Тәуелсіз оқиғалар',m:12,th:'Бір оқиғаның болуы екіншісіне әсер етпесе, олар тәуелсіз. Сонда ықтималдықтар көбейтіледі.',f:'P(A ∩ B) = P(A) · P(B)',ex:'Теңгені екі рет лақтырғанда екеуінде де «елтаңба»: 1/2 · 1/2 = 1/4.',q:'Сүйекті екі рет лақтырғанда екеуінде де 6 түсу ықтималдығы қандай?',a:'1/6 · 1/6 = 1/36.'},
+{c:2,t:'Шартты ықтималдық',m:14,th:'B оқиғасы болғаны белгілі болса, A оқиғасының ықтималдығы өзгереді: біз тек B ішіндегі нәтижелерді қараймыз.',f:'P(A | B) = P(A ∩ B) / P(B)',ex:'Сүйекте жұп сан түскені белгілі. Оның 6 болу ықтималдығы: (1/6) / (3/6) = 1/3.',q:'Сүйекте жұп сан түсті. Оның 4-тен үлкен болу ықтималдығы қандай?',a:'Жұп сандар: 2, 4, 6. 4-тен үлкені тек 6, яғни 1/3.'},
+{c:2,t:'Байес формуласы',m:15,th:'Жаңа дерек (мысалы, тест нәтижесі) түскеннен кейін гипотезаның ықтималдығын қайта бағалауға мүмкіндік береді.',f:'P(A | B) = P(B | A) · P(A) / P(B)',ex:'Ауру үлесі 1%, сезімталдық 95%, жалған оң 5%: 0,0095 / (0,0095 + 0,0495) ≈ 0,16.',q:'Ауру үлесі 10%, сезімталдық 90%, жалған оң 10%. P(ауру | тест +) қандай?',a:'0,09 / (0,09 + 0,09) = 0,5.'},
+{c:3,t:'Ауыстырулар',m:10,th:'n түрлі элементті қатарға n! тәсілмен орналастыруға болады, мұнда n! = 1 · 2 · … · n.',f:'P(n) = n!',ex:'4 адамды қатарға 4! = 24 тәсілмен тізуге болады.',q:'5 кітапты сөреге қанша тәсілмен қоюға болады?',a:'5! = 120 тәсіл.'},
+{c:3,t:'Терулер',m:12,th:'n элементтен k элемент таңдау тәсілдерінің саны, егер таңдау реті маңызды болмаса.',f:'C(n, k) = n! / (k! · (n − k)!)',ex:'10 оқушыдан 2 адам таңдау: C(10, 2) = 45.',q:'6 адамнан 3 адам қанша тәсілмен таңдалады?',a:'C(6, 3) = 20.'}];
+var F=[['Классикалық анықтама','P(A) = m / n'],['Қарсы оқиға','P(Ā) = 1 − P(A)'],['Қосу ережесі','P(A ∪ B) = P(A) + P(B) − P(A ∩ B)'],['Тәуелсіз оқиғалар','P(A ∩ B) = P(A) · P(B)'],['Шартты ықтималдық','P(A | B) = P(A ∩ B) / P(B)'],['Байес формуласы','P(A | B) = P(B | A) · P(A) / P(B)'],['Ауыстырулар','P(n) = n!'],['Терулер','C(n, k) = n! / (k! · (n − k)!)']];
+var QZ=[['Сүйек лақтырғанда 3-ке еселі сан түсу ықтималдығы қандай?',['1/6','1/3','1/2','2/3'],1,'3-ке еселі сандар: 3 және 6, яғни 2/6 = 1/3.'],
+['Теңгені 3 рет лақтырғанда үшеуінде де «елтаңба» түсу ықтималдығы?',['1/2','1/4','1/6','1/8'],3,'Оқиғалар тәуелсіз: 1/2 · 1/2 · 1/2 = 1/8.'],
+['P(A) = 0,3 болса, P(Ā) неге тең?',['0,3','0,6','0,7','1,3'],2,'P(Ā) = 1 − 0,3 = 0,7.'],
+['4 адамды қатарға қанша тәсілмен қоюға болады?',['8','12','16','24'],3,'4! = 1 · 2 · 3 · 4 = 24.'],
+['Мына сандардың қайсысы ықтималдық бола алмайды?',['0','0,5','1','1,2'],3,'Ықтималдық әрқашан 0-ден 1-ге дейінгі аралықта жатады.']];
+var done={},ft=-1,cur=0;
+try{done=JSON.parse(localStorage.getItem('pk-done')||'{}')}catch(e){}
+function save(){try{localStorage.setItem('pk-done',JSON.stringify(done))}catch(e){}}
+function toast(s){var t=$('ts');t.textContent=s;t.classList.add('on');setTimeout(function(){t.classList.remove('on')},1600)}
+// directions + chips
+var dir=$('dir'),chips=$('chips');
+T.forEach(function(n,i){
+var b=document.createElement('button');b.innerHTML='<h3>'+n+'</h3><span class="note" style="color:var(--muted)">'+L.filter(function(x){return x.c===i}).length+' сабақ</span>';
+b.onclick=function(){ft=i;list();$('lessons').scrollIntoView()};dir.appendChild(b);});
+function chipRender(){chips.innerHTML='';['Барлығы'].concat(T).forEach(function(n,i){
+var b=document.createElement('button');b.className='chip';b.textContent=n;b.setAttribute('aria-pressed',String(ft===i-1));
+b.onclick=function(){ft=i-1;list()};chips.appendChild(b);});}
+// lessons list
+function prog(){var n=Object.keys(done).length;$('pt').textContent='Менің прогресім: '+n+' / '+L.length+' сабақ';$('pb').style.width=(n/L.length*100)+'%'}
+function list(){
+var s=$('q').value.trim().toLowerCase(),g=$('lg');g.innerHTML='';chipRender();prog();
+var shown=0;
+L.forEach(function(x,i){
+if(ft>=0&&x.c!==ft)return;
+if(s&&(x.t+' '+T[x.c]).toLowerCase().indexOf(s)<0)return;
+shown++;
+var b=document.createElement('button');b.className='lc'+(done[i]?' d':'');
+b.innerHTML='<small>'+T[x.c]+' · '+x.m+' мин</small><h3>'+x.t+'</h3>';
+b.onclick=function(){open(i)};g.appendChild(b);});
+if(!shown)g.innerHTML='<p>Ештеңе табылмады. Басқа сөзбен іздеп көр.</p>';
+}
+$('q').oninput=list;
+$('clr').onclick=function(){done={};save();list();toast('Прогресс тазартылды')};
+// lesson dialog
+function open(i){
+cur=i;var x=L[i];
+$('dc').textContent=T[x.c]+' · '+(i+1)+' / '+L.length;
+$('dbd').innerHTML='<h3 id="dt">'+x.t+'</h3><p>'+x.th+'</p><div class="fm">'+x.f+'</div><p class="ex"><b>Мысал.</b> '+x.ex+'</p><p><b>Жаттығу.</b> '+x.q+'</p><details><summary>Жауабын көрсету</summary><p>'+x.a+'</p></details>';
+$('dd').textContent=done[i]?'✓ Өттім (қайтару)':'✓ Өттім деп белгілеу';
+$('dp').disabled=i===0;$('dn').disabled=i===L.length-1;
+if(!$('dlg').open)$('dlg').showModal();
+}
+$('dx').onclick=function(){$('dlg').close()};
+$('dp').onclick=function(){open(cur-1)};$('dn').onclick=function(){open(cur+1)};
+$('dd').onclick=function(){if(done[cur])delete done[cur];else done[cur]=1;save();open(cur);list()};
+$('dlg').addEventListener('click',function(e){if(e.target===this)this.close()});
+// formulas
+F.forEach(function(f){
+var b=document.createElement('button');b.className='fc';b.innerHTML='<b>'+f[0]+'</b><span>'+f[1]+'</span>';
+b.onclick=function(){
+var ok=function(){toast('Формула көшірілді ✓')};
+try{navigator.clipboard.writeText(f[1]).then(ok,function(){toast('Көшіру мүмкін болмады')})}catch(e){toast('Көшіру мүмкін болмады')}};
+$('fg').appendChild(b);});
+// quiz
+var qi=0,sc=0;
+function quiz(){
+var z=$('qz');
+if(qi>=QZ.length){z.innerHTML='<h3>Нәтиже: '+sc+' / '+QZ.length+'</h3><p>'+(sc>=4?'Тамаша! Тақырыпты жақсы меңгердің.':sc>=2?'Жақсы бастама. Қателескен сабақтарды қайталап шық.':'Сабақтарды қайта оқып, тестті тағы тапсырып көр.')+'</p><button class="btn" id="rt">Қайта тапсыру ↺</button>';
+$('rt').onclick=function(){qi=0;sc=0;quiz()};return;}
+var d=QZ[qi];
+z.innerHTML='<span class="tag">Сұрақ '+(qi+1)+' / '+QZ.length+'</span><h3>'+d[0]+'</h3><div id="os"></div><p class="ex" id="xp"></p><div id="nx"></div>';
+d[1].forEach(function(o,k){
+var b=document.createElement('button');b.className='op';b.textContent=o;
+b.onclick=function(){
+var all=$('os').children;
+for(var j=0;j<all.length;j++){all[j].disabled=true;if(j===d[2])all[j].classList.add('ok')}
+if(k===d[2])sc++;else b.classList.add('bad');
+$('xp').textContent=(k===d[2]?'Дұрыс! ':'Қате. ')+d[3];
+$('nx').innerHTML='<button class="btn" id="nb">'+(qi===QZ.length-1?'Нәтижені көру':'Келесі сұрақ →')+'</button>';
+$('nb').onclick=function(){qi++;quiz()};};
+$('os').appendChild(b);});
+}
+list();quiz();
+})();
+</script>
+</body>
+</html>
